@@ -1,0 +1,31 @@
+{
+    "files.exclude": {
+        "**/.*.*.cmd": true,
+        "**/*.d": true,
+        "**/*.o": true,
+        "**/*.diff": true,
+        "**/*.rej": true,
+        "**/.git": true,
+        "**/.DS_Store": true,
+    },
+	"files.watcherexclude": {
+        "**/*.d": true,
+        "**/*.o": true,
+        "**/*.cmd": true,
+        "**/*.map": true,
+        "**/*.txt": true,
+    },
+	"search.exclude": {
+        "**/.idea": true,
+        "**/*.o": true,
+        "**/*.d": true,
+        "**/*.cmd": true,
+        "**/*.map": true,
+    },
+    "[c]": {
+        "editor.detectIndentation": false,
+        "editor.tabSize": 4,
+        "editor.insertSpaces": false,
+        "editor.rulers": [120]
+    }
+}
