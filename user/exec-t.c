@@ -7,10 +7,15 @@
 #include "user/log.h"
 
 int mian(int argc, char **argv){
-    logv("test logv");
-    logd("test logd");
-    logi("test logi");
-    logw("test logw");
-    loge("test loge");
+
+    logi("Entry main");
+    char *args[3];
+
+    args[0] = "ls";
+    args[1] = "/";
+    args[2] = 0;
+
+    exec("/ls", args);
+    loge("exec error !");
 	exit(0);
 }

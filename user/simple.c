@@ -7,10 +7,7 @@
 #include "user/log.h"
 
 int mian(int argc, char **argv){
-    logv("test logv");
-    logd("test logd");
-    logi("test logi");
-    logw("test logw");
-    loge("test loge");
+
+    logi("Entry main");
 	exit(0);
 }

@@ -13,11 +13,11 @@ enum user_log_level {
 #define DEFAULT_USER_LOG_LEVEL USER_LOG_DEBUG
 
 #ifndef LOG_LEVEL
-#define LOG_LEVEL 1
+#define LOG_LEVEL DEFAULT_USER_LOG_LEVEL
 #endif
 
 
-#define log_fl(fmt, ...) printf("%s %s[%d]: " fmt, __FILE__, __FUNCTION__, __LINE__, ##__VA_ARGS__)
+#define log_fl(fmt, ...) printf("%s %s[%d]: " fmt "\n", __FILE__, __FUNCTION__, __LINE__, ##__VA_ARGS__)
 
 #define loge(fmt, ...) \
     if (LOG_LEVEL >= USER_LOG_ERROR){\
