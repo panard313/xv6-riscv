@@ -137,6 +137,7 @@ UPROGS += \
 	$U/_log \
 	$U/_fork-t \
 	$U/_exec-t \
+	$U/_redirect-t \
 
 
 fs.img: mkfs/mkfs README $(UPROGS)
