@@ -138,6 +138,8 @@ UPROGS += \
 	$U/_fork-t \
 	$U/_exec-t \
 	$U/_redirect-t \
+	$U/_wc-pipe-t \
+	$U/_cxsh \
 
 
 fs.img: mkfs/mkfs README $(UPROGS)
