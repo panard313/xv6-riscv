@@ -140,6 +140,7 @@ UPROGS += \
 	$U/_redirect-t \
 	$U/_wc-pipe-t \
 	$U/_cxsh \
+	$U/_pingpong \
 
 
 fs.img: mkfs/mkfs README $(UPROGS)
